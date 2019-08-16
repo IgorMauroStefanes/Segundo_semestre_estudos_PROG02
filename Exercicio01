@@ -49,4 +49,23 @@ string2 = "pato"
 print (string1 in string2)
 #essa parte ele vai comparar se um comando conhece o outro.. se um comando esta dentro do outro ou não..
 
- 
+########################################################################
+#1entrar com duas strings e testar se uma esta dentro
+#da outra
+
+#string1 = "a rosa branca"
+#string2 = "rosa"
+
+#print (string2 in string1)
+########################################
+#2 após isso mostrar a posição dentro da outra
+
+          #0123456789012"começa do zero"
+string1 = "a rosa branca"
+string2 = "branca"
+
+print(string1.find(string2))
+
+#.find  serve para contar a posição de uma string dentro de outra
+#################################################################################################
+#################################################################################################
