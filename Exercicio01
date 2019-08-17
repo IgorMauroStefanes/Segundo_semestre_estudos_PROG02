@@ -69,3 +69,48 @@ print(string1.find(string2))
 #.find  serve para contar a posição de uma string dentro de outra
 #################################################################################################
 #################################################################################################
+#digita 1 numero e ele escreve por extenso
+
+#unid= ["um","dois","tres","quatro","cisnco","seis","sete","oito","nove"]
+
+#numentrada=8
+
+#numerod=int(numentrada/10)
+#numerou=numentrada-numerod*10
+#print("dezena", numerod,"unidade", numerou)
+
+#if numerod==0:
+    #string=unid[numerou]
+
+#print("numero por extenso", numentrada, "=", string)
+
+#OUTRA FORMA
+
+unid= ["zero","um","dois","tres","quatro","cisnco","seis","sete","oito","nove"]
+teen= ["dez","onze","doze","treze","quatorze","quinze","dezesseis","dezessete","dezoito","dezenove"]
+deze= ["void","dez","vinte","trinta","quarenta","cinquenta","sessenta","setenta","oitenta","noventa"]
+string=""
+numentrada=89
+
+a=str(numentrada)
+n=len(a)
+print(a,"cuja undade é",a[n-1])
+print(a,"cuja dezena é",a[n-2])
+
+numero_unidade=int(a[n-1])
+numero_dezena=int(a[n-2])
+print ("dezena",numero_dezena, "unidade",numero_unidade)
+
+if numentrada<=9:#então será "um" até "nove"
+    string=inid[numerou]
+elif numentrada<=19:#então será "dez" até "dezenove"
+    string=teen[numero_unidade]
+    
+elif numero_unidade==0:#então sera "vinte","trinta","quarenta"..
+    string=deze[numero_dezena]
+else:           ##então será dezena mais unidade
+    string=deze[numero_dezena]+" e "+unid[numero_unidade]
+    
+print("numero por extenso", numentrada," = ", string)
+
+
