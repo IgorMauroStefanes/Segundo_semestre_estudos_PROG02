@@ -114,3 +114,33 @@ else:           ##então será dezena mais unidade
 print("numero por extenso", numentrada," = ", string)
 
 
+#######################################################################
+#faça 1 programa que valide e corrija o numero de telefone,
+#caso contenha 8 digitos acrescentando o "9" na frente
+#numero=84698833
+#d=[9]
+
+#print (d,+numero)
+
+a= "joão da silva 1234-5678 joinville"
+n=len(a)
+string=""
+
+for k in range (n):
+    #print (k,a[k])
+    if a[k] in ("1","2","3","4","5","6","7","8","9","0"):
+        cont=1
+        while a[k+cont] in ("1","2","3","4","5","6","7","8","9","0"):
+            cont+cont+1
+        print("primeiro pedaco",cont)
+        if a[k+cont]=="-":
+            cont=cont+1
+        while a[k+cont] in ("1","2","3","4","5","6","7","8","9","0"):
+            cont=cont-1
+        print("segundo pedaco",cont)
+        cont=cont-1
+        break
+if cont<=8:
+        string=a[0:k]+"9"+a[k:]
+        
+print("string= ", string)
