@@ -12,3 +12,6 @@ frase = frase.replace('o', '0')
 frase = frase.replace('s', '5')
 ...
 print (frase)
+
+
+#OBS: string.replace (antigo, novo)#  REPLACE TROCA O ANTIGO PELO NOVO.
