@@ -1,0 +1,14 @@
+#escreva um tradutor leet. o nivel mais basico do leet
+#é a substituição de letras por numeros. as mensagens nesse
+#nivel podem tranquilamente ser "traduzidas". 
+
+frase = input('Digite uma frase:')
+frase = frase.replace('a', '4')
+frase = frase.replace('t', '7')
+frase = frase.replace('e', '3')
+frase = frase.replace('i', '1')
+frase = frase.replace('b', '8')
+frase = frase.replace('o', '0')
+frase = frase.replace('s', '5')
+...
+print (frase)
