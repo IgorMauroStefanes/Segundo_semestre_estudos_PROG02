@@ -1,0 +1,16 @@
+#a="fulano"
+#n=len(a)
+
+for k in range(3):     #OBS:ele vai do 0 a 2 a contagem
+    print(k)
+print("___________")
+
+
+for k in range(2,5): #obs: inicia em 2 a 4  a contagem
+    print(k)
+print("___________")
+for k in range(2,11,3): #inicia em 2 até 10 e pula de3
+    print(k)            #pula de 3 em 3
+print("___________")    
+for k in range(5,3,-1): #inicia em 5 regride até 2
+    print(k)
