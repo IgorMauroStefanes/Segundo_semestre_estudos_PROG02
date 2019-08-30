@@ -1,0 +1,14 @@
+a="fulano"
+n=len(a)
+
+k=0
+
+while k<n:
+    print(a[:k])
+    k=k+1
+    
+k=n
+while k>=0:
+    print(a[:k])
+    k=k-1
+    
