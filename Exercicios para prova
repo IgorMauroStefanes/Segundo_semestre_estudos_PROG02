@@ -57,7 +57,7 @@ print("as consoantes são=",consoantes)
 nota=[]
 par=[]
 impar=[]
-for k in range(3):
+for k in range(20):
     c=int(input(" digite um numero"))
     nota.append(int(c))
     if c %2==0:
@@ -65,5 +65,22 @@ for k in range(3):
     else:
         impar.append(c)
         
-        
-        
+ ##########################
+ #6)faça um Programa que peça as quatro notas de 10 alunos, calcule e armazene num vetor a média de cada aluno 
+#imprima o número de alunos com média maior ou igual a 7.0.
+aprovados=0
+
+for k in range(5): #vai fazer uma verificação de 4 notas em 5 alunos
+    print("aluno",k+1)
+    n1=float(input("nota1"))
+    n2=float(input("nota2"))
+    n3=float(input("nota3"))
+    n4=float(input("nota4"))
+    media= (n1+n2+n3+n4)/4
+    print("media=", media)
+    
+    if media>=7:
+        aprovados=aprovados+1
+    
+    print("quantidade de alunos com nota igual ou maior a 7")
+    ###############################################
