@@ -84,3 +84,28 @@ for k in range(5): #vai fazer uma verificação de 4 notas em 5 alunos
     
     print("quantidade de alunos com nota igual ou maior a 7")
     ###############################################
+#USANDO MESMO EXERCICIO ACIMA, VAMOS SEPARAR AS NOTAS DE CADA ALUNO, AS MEDIAS DE CADA ALUNO,
+#E QUANTIDADE DE ALUNO COM NOTA ACIMA DE 7
+aprovados=0
+nomes=[]
+medias=[]
+for k in range(5): #vai fazer uma verificação de 4 notas em 5 alunos
+    print("aluno",k+1)
+    nome=input("nome do aluno: ")
+    nomes.append(nome)
+    n1=float(input("nota1: "))
+    n2=float(input("nota2: "))
+    n3=float(input("nota3: "))
+    n4=float(input("nota4: "))
+    media= (n1+n2+n3+n4)/4
+    print("media=", media)
+    medias.append(media)
+    if media>=7:
+        aprovados=aprovados+1
+    
+print("quantidade de alunos com nota igual ou maior a 7")
+print("lista de alunos e medias")
+
+for k in range(2):
+    print(nomes[k], "=", medias[k])
+    
