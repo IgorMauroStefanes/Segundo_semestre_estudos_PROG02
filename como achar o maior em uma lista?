@@ -1,0 +1,10 @@
+#qual o maior valor da lista?
+
+a=(3,6,7,4,8,2)
+n=len(a)
+maior_valor=0
+
+for k in range(n):
+    if a[k]>maior_valor:
+        maior_valor=a[k]
+    print("o maior valor é",maior_valor)
