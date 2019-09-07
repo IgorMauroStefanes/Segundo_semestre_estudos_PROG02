@@ -109,3 +109,35 @@ print("lista de alunos e medias")
 for k in range(2):
     print(nomes[k], "=", medias[k])
     
+###################################
+aprovados=0
+nomes=[]
+medias=[]
+for k in range(3): #vai fazer uma verificação de 4 notas em 5 alunos
+    print("aluno",k+1)
+    nome=input("nome do aluno: ")
+    nomes.append(nome)
+    n1=float(input("nota1: "))
+    n2=float(input("nota2: "))
+    n3=float(input("nota3: "))
+    n4=float(input("nota4: "))
+    media= (n1+n2+n3+n4)/4
+    print("media=", media)
+    medias.append(media)
+    if media>=7:
+        aprovados=aprovados+1
+
+print("quant de alunos nota maior igual a 7-",aprovados)
+print(" ")
+n=len(nomes)
+print(nomes)
+print(medias)
+
+maiorvalor=0
+i=0
+for k in range(n):
+    if medias[k]>maiorvalor:
+        meiorvalor=medias[k]
+        i=k
+        
+print("maior media=", maiorvalor,nomes[i])
