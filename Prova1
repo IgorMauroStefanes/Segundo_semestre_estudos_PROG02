@@ -1,0 +1,33 @@
+1 entrar uma frase e imprimir a frase cm a #letra "p" na frente de cada palavra.
+#a frase deve conter uma string com palavras separadas por espaços
+#exemplo:
+#string=" a casa branca"
+#resposta pa pcasa pbranca
+
+__________________
+
+s= "a casa branca"
+n=len(s)
+ns="p"
+for k in range(n):
+    if s[k]==" ":
+        ns=ns+" p"
+    else:
+        ns=ns+s[k]
+
+print(k,ns)
+----------------------
+#2 entrar com uma data por extenso (string), processar e imprimir ela no formato
+"dd/mm/aaa"
+#exemplo
+#string="10 de janeiro de 2019"
+#resposta="10/01/2019"
+
+s= "10 de janeiro de 2019"
+resposta= "10/01/2019"
+
+if s[6:9]=="jan":
+    print(s[0:2]+"/01"+s[n-4:n])
+    
+if s[6:9]=="fev":
+    print(s[0:2]+"/02"+s[n-4:n])
