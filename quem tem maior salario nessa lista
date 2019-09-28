@@ -12,3 +12,24 @@ for k in range(n):
     print("o maior valor agora é", maiorvalor)
 print(" o maior valor então é, maiorvalor")
 print("  do", nome[imaiorvalor])
+
+###########################
+salario=[3,5,8,4,6]
+nome=["ana","beto","cris","rob","maria"]
+n=(len(salario))
+
+for k in range(n):
+    print(nome[k],"",salario[k])
+
+for k in range(n):
+    if salario[k]>7:
+        salario[k]=salario[k]*1,5
+    else:
+        salario[k]=salario[k]*2
+print("--------depois do aumento")
+media=0
+for k in range(n):
+    print(nome[k],"",salario[k])
+    media=media+a[k]
+print("    media",media/n)
+
