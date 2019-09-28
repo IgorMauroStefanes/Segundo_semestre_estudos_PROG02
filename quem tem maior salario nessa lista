@@ -1,0 +1,14 @@
+#quem tem maior salario nessa lista
+
+salario=[3,5,8,4,6]
+nome=["ana","beto","cris","rob","maria"]
+n=(len(salario))
+maiorvalor=0
+imaiorvalor=0
+for k in range(n):
+    if salario[k]>maiorvalor:
+        maiorvalor=salario[k]
+        imaiorvalor=k
+    print("o maior valor agora é", maiorvalor)
+print(" o maior valor então é, maiorvalor")
+print("  do", nome[imaiorvalor])
