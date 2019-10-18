@@ -1,7 +1,40 @@
 1) Crie uma função que receba uma string como argumento e retorne a 
    mesma string separada por virgulas
    Faça uma chamada à função, passando como parâmetro uma string.
+def virgulas (w):
+    wn=""
+    for k in range(len(w)):
+        wn=wn+w [k]+","
+        print(wn)
+    wn = wn[0:len(wn) - 1]
+    return wn
+# inicio do programa
+s="rosa"
+s1=virgulas(s)
+print(s1)
 
+
+#wn=" "
+#w="rosa"
+#
+#for k in range(len(w)):
+    #wn=wn+w[k]+","
+    
+#wn=wn[0:len(wn)-1]
+#print(wn)
+
+
+agora para demover as virgulas
+
+
+w="r,o,s,a"
+wn=" "
+
+for k in range (len(w)):
+    if w[k]!=",":
+        wn=wn+w[k]
+    print (wn)
+    
 2) Crie uma funcao que tire as virgulas da string conforme feito no 
    exercicio anterior.
 
