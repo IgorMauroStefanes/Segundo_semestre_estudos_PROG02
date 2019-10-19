@@ -37,19 +37,44 @@ for k in range (len(w)):
     
 2) Crie uma funcao que tire as virgulas da string conforme feito no 
    exercicio anterior.
+w="r,o,s,a"
+wn=" "
 
+for k in range (len(w)):
+    if w[k]!=",":
+        wn=wn+w[k]
+    print (wn)
 3) Crie uma função que receba como parâmetro uma lista de 4 elementos, 
    adicione 2 elementos a lista e imprima a lista
+def adiciona(s,s1,s2):
+    s.append(s1)
+    s.append(s2)
+    return s
+    
+s=[2,3,4,5]
+s=adiciona(s,11,15)
+print(s)
 
 4) Crie uma função("rolar") que receba uma string como argumento e 
    faca o rolamento das letras com n posicoes. 
    a ="amarelo" a funcao rolar(a,2) resultaria="loamare" e a funcao 
    rolar(a,4) resultaria="reloama" 
 
+def rolar(w,n):
+    wn=w[len(w)-n:] + w[0:len(w)-n]
+    return wn
+    
+#inicio do programa
+s="amarelo"
+s1=rolar(s,2)
+print(s1)
+
+for k in range(5):
+    s1=rolar(s,k)
+    print (s1)
 
 
-
-
+##############################################################################
 # Exercício 1 - Crie uma função que imprima a sequência de números pares entre 1 e 20 
 (a função não recebe parâmetro) e depois faça uma chamada à função para listar os números
  
